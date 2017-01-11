@@ -9,4 +9,6 @@ public class Prob05 {
 		base.service("밤");
 		base.service("오후"); 
 	}
+	
 }
+ 

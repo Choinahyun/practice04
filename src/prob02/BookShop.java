@@ -1,4 +1,5 @@
 package prob02;
+import java.util.Scanner;
 
 public class BookShop {
 
@@ -31,6 +32,16 @@ public class BookShop {
 		
 		System.out.println("*****도서 정보 출력하기******");
 		displayBookInfo( books );
+	}
+	
+	private static void displayBookInfo (Book[] books) {
+		for ( int i=0; i<books.length; i++) {
+			System.out.print("책 번호:" +books[i].getBookNo() 
+							+ " 책 제목:" +books[i].getTitle() 
+							+ " 작가:" + books[i].getAuthor()
+							+ " 대여 유무:");
+			books[i].print();
+		}
 	}
 
 }
